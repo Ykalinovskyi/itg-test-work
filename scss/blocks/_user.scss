@@ -1,0 +1,83 @@
+.user {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+.user__search {
+    text-align: center;
+    position: relative;
+}
+.user__search-input {
+    font-family: inherit;
+    font-size: 14px;
+    color: #abb1ba;
+    
+    width: 296px;
+    padding: 6px 8px;
+
+    border: 1px solid #d5d8dd;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.user__search-input::placeholder {
+    font-family: inherit;
+    color: #abb1ba;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.user__search-button {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    
+    background: transparent;
+    border: none;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.user__info {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+
+    img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+}
+
+.user__info-btn {
+    border: none;
+    background: transparent;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #d5d8dd;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user__info-btn:hover svg{
+    animation-duration: 3s;
+    animation-name: setting-start;
+}
+
+@keyframes setting-start {
+    from {
+        rotate: 0;
+    }
+    to {
+        rotate: 180deg;
+    }
+}

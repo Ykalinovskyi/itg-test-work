@@ -51,8 +51,20 @@ html {
 *::after {
 	box-sizing: border-box;
 }
+/* Visually-hidden */
 
-body {
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.page-body {
 	margin: 0;
 	font-family: 'Open Sans',serif;
 	font-weight: 400;
@@ -64,4 +76,11 @@ body {
 img {
 	max-width: 100%;
 	object-fit: contain;
+}
+
+// Container
+.container {
+	width: 1950px;
+	padding: 0 15px;
+	margin: 0 auto;
 }

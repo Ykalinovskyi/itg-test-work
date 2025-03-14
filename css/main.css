@@ -45,7 +45,19 @@ html {
           box-sizing: border-box;
 }
 
-body {
+/* Visually-hidden */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page-body {
   margin: 0;
   font-family: "Open Sans", serif;
   font-weight: 400;
@@ -58,4 +70,171 @@ img {
   max-width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.container {
+  width: 1950px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  border-bottom: 1px solid #d5d8dd;
+}
+
+.header__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 8px 16px;
+}
+
+.header__logo {
+  width: 174px;
+  height: 24px;
+}
+
+.user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
+}
+
+.user__search {
+  text-align: center;
+  position: relative;
+}
+
+.user__search-input {
+  font-family: inherit;
+  font-size: 14px;
+  color: #abb1ba;
+  width: 296px;
+  padding: 6px 8px;
+  border: 1px solid #d5d8dd;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.user__search-input::-webkit-input-placeholder {
+  font-family: inherit;
+  color: #abb1ba;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.user__search-input::-moz-placeholder {
+  font-family: inherit;
+  color: #abb1ba;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.user__search-input:-ms-input-placeholder {
+  font-family: inherit;
+  color: #abb1ba;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.user__search-input::-ms-input-placeholder {
+  font-family: inherit;
+  color: #abb1ba;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.user__search-input::placeholder {
+  font-family: inherit;
+  color: #abb1ba;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.user__search-button {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.user__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+}
+.user__info img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.user__info-btn {
+  border: none;
+  background: transparent;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #d5d8dd;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.user__info-btn:hover svg {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: setting-start;
+          animation-name: setting-start;
+}
+
+@-webkit-keyframes setting-start {
+  from {
+    rotate: 0;
+  }
+  to {
+    rotate: 180deg;
+  }
+}
+
+@keyframes setting-start {
+  from {
+    rotate: 0;
+  }
+  to {
+    rotate: 180deg;
+  }
 }
