@@ -1,0 +1,30 @@
+@mixin laptop () {
+    @media (max-width: 1220px) { //с учетом полоски скрола в 20px
+        @content;
+    }
+}
+
+@mixin tablet () {
+    @media (max-width: 1011px) { //с учетом полоски скрола в 20px
+        @content;
+    }
+}
+
+@mixin tabletXS () {
+    @media (max-width: 787px) {
+        @content;
+    }
+}
+
+@mixin mobile () {
+    @media (max-width: 350px) {
+        @content;
+    }
+}
+
+// оптимизация графики под ретина дисплеи 
+@mixin mediaBG () {
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        @content;   
+    }
+}
