@@ -13,7 +13,7 @@
     color: #abb1ba;
     
     width: 296px;
-    padding: 6px 8px;
+    padding: 6px 24px 6px 8px;
 
     border: 1px solid #d5d8dd;
     border-radius: 4px;
@@ -32,7 +32,7 @@
     height: 16px;
     position: absolute;
     right: 8px;
-    top: 8px;
+    top: 9px;
     
     background: transparent;
     border: none;
@@ -54,11 +54,6 @@
 }
 
 .user__info-btn {
-    border: none;
-    background: transparent;
-    padding: 0;
-    outline: none;
-    cursor: pointer;
     width: 32px;
     height: 32px;
     border: 1px solid #d5d8dd;

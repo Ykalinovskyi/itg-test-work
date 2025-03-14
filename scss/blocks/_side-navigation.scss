@@ -1,0 +1,28 @@
+.side-navigation {
+    display: flex;
+
+}
+
+.side-navigation__btns {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+
+    padding: 16px;
+    height: 100%;
+
+    border-right: 1px solid #d5d8dd;
+}
+
+.side-navigation__menu-search {
+    padding: 16px;
+    border-bottom: 1px solid #d5d8dd;
+}
+
+.side-navigation__menu {
+    border-right: 1px solid #d5d8dd;
+}
+
+.side-navigation__menu-list {
+    padding: 0 16px;
+}

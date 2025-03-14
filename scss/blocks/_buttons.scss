@@ -1,0 +1,37 @@
+.button {
+    border: none;
+    background: transparent;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.button-hide {
+    width: 24px;
+    height: 24px;
+    background-image: url('./../img/icons/sidebar.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+
+    transition: scale 0.2s ease-in;
+
+    &:hover {
+        scale:110%;
+    }
+}
+
+.button-favorite {
+    width: 24px;
+    height: 24px;
+    background-image: url('./../img/icons/star.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+
+    transition: scale 0.2s ease-in;
+
+    &:hover {
+        scale:110%;
+    }
+}
