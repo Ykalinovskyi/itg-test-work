@@ -92,3 +92,48 @@
         border-color:#a4a5a7;
     }
 }
+
+.button-add {
+    background-image: url('./../img/icons/plus.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+.button-search {
+    background-image: url('./../img/icons/search-b.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+
+.button-close {
+    width: 16px;
+    height: 16px;
+
+    background-image: url('./../img/icons/closed.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+
+    transition: scale 0.2s ease-in;
+
+    &:hover {
+        scale: 110%;
+    }
+}
+
+.button-close-badge {
+    width: 16px;
+    height: 16px;
+
+    background-image: url('./../../img/icons/cross.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+
+    transition: scale 0.2s ease-in;
+
+    &:hover {
+        scale: 110%;
+    }
+}

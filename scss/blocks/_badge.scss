@@ -1,0 +1,22 @@
+.badge {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+
+    display: inline-block;
+    border: 1px solid #99d5ff;
+    border-radius: 4px;
+    padding: 2px 24px 2px 8px;
+
+    background-color: #e5f4ff;
+
+    position: relative;
+}
+
+.badge__closer {
+    position: absolute;
+    right: 4px;
+    bottom: 3px;
+
+    padding: 2px 8px;
+}

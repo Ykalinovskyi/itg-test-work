@@ -1,0 +1,121 @@
+.form__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.form__item {
+}
+
+.form__label {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+
+    position: relative;
+
+    span {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 143%;
+        color: #2e3238;
+
+        &.necessary {
+            display: inline-block;
+            margin-left: 12px;
+        }
+
+        &.necessary::before {
+            content: " ";
+            display: block;
+            width: 8px;
+            height: 20px;
+
+            background-image: url('./../img/icons/necessary.svg');
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: 8px 7px;
+
+            position: absolute;
+            top: 4px;
+            left: 0;
+        }
+    }
+
+    &_btn {
+        flex-direction: row;
+        column-gap: 4px;
+        align-items: flex-end;
+    }
+}
+
+.form__input {
+    border: 1px solid #d5d8dd;
+    border-radius: 4px;
+    padding: 5px 8px;
+
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: #2e3238;
+    width: 100%;
+
+    &_badge {
+        min-height: 32px;
+        padding: 2px 30px 2px 4px;
+        width: 100%;
+        margin-right: 4px;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap:4px;
+
+        position: relative;
+
+        & .button-close {
+            position: absolute;
+            right: 8px;
+            top: 8px;
+        }
+    }
+}
+
+.form__wrapper {
+    display: flex;
+    align-items: flex-start;
+
+    &_row {
+        flex-direction: row;
+    }
+
+    &_col {
+        flex-direction: column;
+        row-gap: 8px;
+        width: 100%;
+    }
+}
+
+.form__btns {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+}
+
+.form__btn {
+    border: 1px solid #d5d8dd;
+    border-radius: 4px;
+    padding: 6px;
+    width: 32px;
+    height: 32px;
+
+    transition: scale 0.2s ease-in;
+
+    &:hover {
+        scale: 110%;
+    }
+}
