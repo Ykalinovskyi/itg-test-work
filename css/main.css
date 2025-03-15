@@ -66,6 +66,9 @@ html {
   font-size: 14px;
   color: #2e3238;
   line-height: 1.43;
+  background: linear-gradient(#c3c2c2, transparent 1px), linear-gradient(90deg, #c2c1c1, transparent 1px);
+  background-size: 8px 8px;
+  background-position: center center;
 }
 
 img {
@@ -198,7 +201,7 @@ img {
 .button-close-badge {
   width: 16px;
   height: 16px;
-  background-image: url("./../../img/icons/cross.svg");
+  background-image: url("./../img/icons/cross.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 10px 10px;
@@ -429,7 +432,7 @@ img {
   padding: 6px 24px 6px 8px;
   border: 1px solid #d5d8dd;
   border-radius: 4px;
-  background-color: #fcfcfd;
+  background-color: transparent;
   font-weight: 400;
   font-size: 14px;
   line-height: 143%;
@@ -544,6 +547,7 @@ img {
 
 .main-content {
   padding-bottom: 16px;
+  position: relative;
 }
 
 .main-content__header {
