@@ -80,6 +80,7 @@ img {
 }
 
 .button {
+  font-family: inherit;
   border: none;
   background: transparent;
   padding: 0;
@@ -113,6 +114,56 @@ img {
 }
 .button-favorite:hover {
   scale: 110%;
+}
+
+.button-create {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+  color: #2e3238;
+  border: 1px solid #d5d8dd;
+  border-radius: 4px;
+  padding: 6px 12px;
+  width: 82px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.button-create:hover {
+  color: #acb1b8;
+  border-color: #989ca1;
+}
+
+.button-saved {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+  padding: 6px 12px;
+  background-color: #0078cf;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.button-saved:hover {
+  background-color: #108de6;
+}
+
+.button-saved-logout {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 143%;
+  text-align: center;
+  color: #2e3238;
+  border: 1px solid #d5d8dd;
+  border-radius: 4px;
+  padding: 6px 12px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.button-saved-logout:hover {
+  border-color: #a4a5a7;
 }
 
 .header {
@@ -439,4 +490,47 @@ img {
 
 .menu-list__link:hover .menu-list__item::before {
   display: none !important;
+}
+
+.main-content__header {
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-content__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
+}
+.main-content__label span {
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #2e3238;
+}
+
+.main-content__btns-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 4px;
+     -moz-column-gap: 4px;
+          column-gap: 4px;
 }
