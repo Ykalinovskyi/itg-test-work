@@ -12,4 +12,10 @@
 .header__logo {
     width: 174px;
     height: 24px;
+
+    flex-shrink: 0;
+}
+
+.header__side-menu-mobile {
+    display: none;
 }

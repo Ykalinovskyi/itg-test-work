@@ -78,9 +78,13 @@ img {
 }
 
 .container {
-  width: 1950px;
+  max-width: 1950px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.none {
+  display: none !important;
 }
 
 .button {
@@ -104,6 +108,9 @@ img {
 }
 .button-hide:hover {
   scale: 110%;
+}
+.button-hide_black {
+  background-image: url("./../img/icons/btn-hide-b.svg");
 }
 
 .button-favorite {
@@ -251,6 +258,12 @@ img {
 .header__logo {
   width: 174px;
   height: 24px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.header__side-menu-mobile {
+  display: none;
 }
 
 .user {
@@ -412,13 +425,13 @@ img {
   border-right: 1px solid #d5d8dd;
 }
 
+.side-navigation__menu {
+  border-right: 1px solid #d5d8dd;
+}
+
 .side-navigation__menu-search {
   padding: 16px;
   border-bottom: 1px solid #d5d8dd;
-}
-
-.side-navigation__menu {
-  border-right: 1px solid #d5d8dd;
 }
 
 .side-navigation__menu-list {
@@ -559,7 +572,6 @@ img {
 
 .main-content {
   padding-bottom: 16px;
-  position: relative;
 }
 
 .main-content__header {

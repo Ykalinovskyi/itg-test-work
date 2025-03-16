@@ -85,7 +85,11 @@ img {
 
 // Container
 .container {
-	width: 1950px;
+	max-width: 1950px;
 	padding: 0 15px;
 	margin: 0 auto;
+}
+
+.none {
+    display: none !important;
 }

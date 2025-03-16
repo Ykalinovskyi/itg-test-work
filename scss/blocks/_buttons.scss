@@ -20,6 +20,10 @@
     &:hover {
         scale:110%;
     }
+
+    &_black {
+        background-image: url('./../img/icons/btn-hide-b.svg');
+    }
 }
 
 .button-favorite {
