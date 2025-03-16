@@ -122,6 +122,20 @@
     }
 }
 
+.button-calendar {
+
+    background-image: url('./../img/icons/calendar.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+
+    transition: scale 0.2s ease-in;
+
+    &:hover {
+        scale: 110%;
+    }
+}
+
 .button-close-badge {
     width: 16px;
     height: 16px;
