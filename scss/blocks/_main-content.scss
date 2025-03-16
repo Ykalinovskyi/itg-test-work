@@ -10,6 +10,11 @@
     justify-content: space-between;
 }
 
+.main-content__header_shadow {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.04);
+}
+
+
 .main-content__label {
     display: flex;
     align-items: center;
